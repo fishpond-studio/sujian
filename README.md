@@ -15,6 +15,18 @@
 
 ---
 
+## 界面预览
+
+<p align="center">
+  <img src="./img/1.png" width="49%" alt="素笺 界面预览 1" />
+  <img src="./img/2.png" width="49%" alt="素笺 界面预览 2" />
+</p>
+<p align="center">
+  <img src="./img/3.png" width="82%" alt="素笺 界面预览 3" />
+</p>
+
+---
+
 ## 这是什么
 
 **素笺**是一个纯前端的 Markdown 写作工具。没有账号、没有服务器、没有打扰——
