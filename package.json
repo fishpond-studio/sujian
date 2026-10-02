@@ -1,0 +1,47 @@
+{
+  "name": "sujian",
+  "private": true,
+  "version": "0.3.0",
+  "description": "素笺 · 一个安静、好用的网页版 Markdown 编辑器，窗口化书写。",
+  "type": "module",
+  "license": "MIT",
+  "author": "Fishpond Studio",
+  "keywords": [
+    "markdown",
+    "editor",
+    "markdown-editor",
+    "vue",
+    "vue3",
+    "vite",
+    "tailwindcss",
+    "macos-vibrancy",
+    "glassmorphism",
+    "github-pages",
+    "writing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fishpond-studio/sujian.git"
+  },
+  "homepage": "https://fishpond-studio.github.io/sujian/",
+  "bugs": {
+    "url": "https://github.com/fishpond-studio/sujian/issues"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "dompurify": "^3.1.6",
+    "marked": "^12.0.2",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "vite": "^5.3.3"
+  }
+}
