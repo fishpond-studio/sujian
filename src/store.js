@@ -127,7 +127,10 @@ function loadDocs() {
   } catch (e) {
     /* ignore */
   }
-  if (!store.docOrder.length) {
+  // Only seed the starter document on the very first run (before onboarding).
+  // Once the user is onboarded, an empty list means they deleted everything, so
+  // refreshing must not resurrect the default document.
+  if (!store.docOrder.length && !localStorage.getItem(ONBOARD_KEY)) {
     const doc = {
       id: uid('doc'),
       title: '第一张笺纸',
@@ -871,7 +874,7 @@ loadUI()
 applyTheme()
 if (shouldShowOnboarding()) {
   store.showOnboarding = true
-} else if (!store.windows.length) {
+} else if (!store.windows.length && store.docOrder.length) {
   openWindow(store.docOrder[0])
 }
 // ensure at least one window when onboarding is dismissed without opening one
